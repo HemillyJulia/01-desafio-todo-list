@@ -1,5 +1,7 @@
 import { Header } from "./Components/Header"
 import { Newtask } from "./Components/Newtask"
+import { Task } from "./Components/Task"
+import './index.css'
 
 
 function App() {
@@ -8,10 +10,16 @@ function App() {
   return (
     <div >
       <Header/>
-     
-      <h1>todo</h1>
+     <Newtask/>
+     <Task/>
+      
     </div>
   )
 }
 
 export default App
+
+
+
+
+

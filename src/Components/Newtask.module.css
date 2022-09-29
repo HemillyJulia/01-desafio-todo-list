@@ -1,0 +1,47 @@
+.newtask {
+    display: flex;
+   margin-top: -25px;
+}
+
+.newtask input {
+   flex: 1;
+  max-width: 638px;
+    height: 54px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 16px;
+    background: #262626;
+    border: 1px solid #0D0D0D;
+    border-radius: 8px;
+    order: 0;
+    margin-left: auto;
+    color: white;
+}
+
+.newtask button {
+    width: 90px;
+    height: 52px;
+    background: #1E6F9F;
+    border-radius: 5px;
+    border: solid 1px black;
+   display: flex;
+   align-items: center;
+   flex-direction:row;
+   justify-content: center;
+   margin-right: auto;
+   margin-left: 8px;
+   color: #F2F2F2;
+   justify-content: space-around;
+   
+   ;
+}
+
+.newtask button img {
+
+    height:16 px;
+    width: 16px;
+
+    
+}
