@@ -9,18 +9,18 @@ const tasks  =[
     {
         id: uuidv4(),
         title:'Organizar as roupas de cama',
-        isComplete:"false"
+        isComplete:false
     },
     {
         id: uuidv4(),
         title:'Praticar alguma atividade física',
-        isComplete:"false"
+        isComplete:false
     },
 
     {
         id: uuidv4(),
         title:'Organizar as roupas de cama',
-        isComplete:"false"
+        isComplete:false
     }
 ]
 
@@ -32,6 +32,7 @@ export function Task() {
           <p className={styles.completedtasks}>Tarefas Concluídas <p className={styles.count}>0</p></p>
         </div>
       <div className={styles.task}>
+        
         {tasks.length > 0 ? <TaskBox tasks={tasks}/> : <><img src={Clipboard} att="ClipBoard" />
         <strong> Você ainda não tem tarefas cadastradas.</strong>
         <p>Crie tarefas e organize seus itens a fazer.</p></>}
