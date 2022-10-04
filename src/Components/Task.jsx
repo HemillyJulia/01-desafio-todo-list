@@ -5,26 +5,10 @@ import { TaskBox } from "../TaskBox";
 
 //Passar para p TaskBosx usando props
 
-const tasks  =[
-    {
-        id: uuidv4(),
-        title:'Organizar as roupas de cama',
-        isComplete:false
-    },
-    {
-        id: uuidv4(),
-        title:'Praticar alguma atividade física',
-        isComplete:false
-    },
 
-    {
-        id: uuidv4(),
-        title:'Organizar as roupas de cama',
-        isComplete:false
-    }
-]
 
-export function Task() {
+export function Task(props) {
+  const tasks = props.rolinho
   return (
     <div className={styles.container}>
         <div className={styles.taskheader}>
