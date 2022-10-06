@@ -11,16 +11,16 @@ export function Task(props) {
 
   console.log(tasks.length);
 
-  const completedTasks = tasks.filter (function (task) {    
+  const completedTasks = tasks.filter(function (task) {
     //Se task.isComplete for true, retorna true, se false, retorna false
-      if (task.isComplete === true) {
+    if (task.isComplete === true) {
       return true;
     } else {
       return false;
     }
   });
 
-  console.log("array filtrada",completedTasks.length)
+  console.log("array filtrada", completedTasks.length);
 
   return (
     <div className={styles.container}>
@@ -29,23 +29,22 @@ export function Task(props) {
           Tarefas Criadas <span className={styles.count}>{tasks.length}</span>
         </p>
         <p className={styles.completedtasks}>
-          Tarefas Concluídas <span className={styles.count}>{completedTasks.length}</span>
+          Tarefas Concluídas{" "}
+          <span className={styles.count}>{completedTasks.length}</span>
         </p>
       </div>
       <div className={styles.task}>
         {tasks.length > 0 ? (
           <TaskBox tasks={tasks} />
         ) : (
-          <>
+          <div className={styles.emptytask}>
             <img src={Clipboard} att="ClipBoard" />
             <strong> Você ainda não tem tarefas cadastradas.</strong>
             <p>Crie tarefas e organize seus itens a fazer.</p>
-          </>
+          </div>
         )}
       </div>
     </div>
   );
 }
-
-
 

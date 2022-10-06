@@ -1,0 +1,25 @@
+.paidastarefas {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+
+}
+
+.cadatarefa {
+    display: flex;
+    background: #333333;
+    width: 100%;
+    border-radius: 8px;
+    flex-wrap: wrap;
+
+}
+
+.cadatarefa p input {
+
+    height: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+    background: #333333;
+
+}
