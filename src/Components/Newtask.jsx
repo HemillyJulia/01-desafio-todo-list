@@ -14,6 +14,14 @@ export function Newtask(props) {
 
   //criei uma função que recebe uma variável no qual será as novas informalões inseridas na minha lista de tarefas.
   function createNewTask() {
+    //Crio a condicional antes de chamar a função 
+    if (inputTasks.length > 0) {
+      console.log("Você clicou em criar.");
+    } else {
+      window.alert("Crie uma tarefa válida!") ;
+      return
+    } 
+
     const novaTarefa = {
       id: uuidv4(),
       title: inputTasks,
@@ -29,11 +37,7 @@ export function Newtask(props) {
     //Se não, dispara um alerta na tela.
     console.log(inputTasks);
 
-    if (inputTasks.length > 0) {
-      console.log("Você clicou em criar.");
-    } else {
-      window.alert("Crie uma tarefa válida!");
-    }
+
   }
 
   return (

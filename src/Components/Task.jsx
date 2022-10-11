@@ -8,9 +8,12 @@ import { TaskBox } from "../TaskBox";
 export function Task(props) {
   //Criei uma variável que recebe a propriedade tarefasNaCaixa
   const tasks = props.tarefasNaCaixa;
+  const setTarefas = props.setTarefas
+ 
 
   console.log(tasks.length);
 
+  
   const completedTasks = tasks.filter(function (task) {
     //Se task.isComplete for true, retorna true, se false, retorna false
     if (task.isComplete === true) {
@@ -35,7 +38,7 @@ export function Task(props) {
       </div>
       <div className={styles.task}>
         {tasks.length > 0 ? (
-          <TaskBox tasks={tasks} />
+          <TaskBox tasks={tasks} setTarefas={setTarefas} />
         ) : (
           <div className={styles.emptytask}>
             <img src={Clipboard} att="ClipBoard" />

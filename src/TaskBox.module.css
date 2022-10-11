@@ -21,5 +21,23 @@
     margin-right: 16px;
     margin-top: 16px;
     background: #333333;
-
+    cursor: pointer;
+    
+  
 }
+
+.cadatarefa p button {
+background: transparent;
+border: 0;
+color: #808080;
+cursor: pointer;
+line-height: 0;
+border-radius: 2px;
+
+ 
+}
+
+.cadatarefa p button:hover {
+color:#E25858
+     
+    }

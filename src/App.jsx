@@ -36,7 +36,7 @@ function App() {
       {/* Dentro do meu componente Newtask eu passei a função que altera o valor como propriedade */}
       <Newtask setTarefas={setTarefas} tarefasDoInput={tarefas} />
       {/* Dentro do meu componente Task , rolinho recebe como propriedade o valor inicial do meu estado que é tarefas */}
-      <Task tarefasNaCaixa={tarefas} />
+      <Task tarefasNaCaixa={tarefas} setTarefas={setTarefas} />
     </div>
   );
 }
