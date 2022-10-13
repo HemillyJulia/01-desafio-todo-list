@@ -11,7 +11,7 @@ export function Task(props) {
   const setTarefas = props.setTarefas
  
 
-  console.log(tasks.length);
+  console.log('Tarefas Criadas',tasks.length);
 
   
   const completedTasks = tasks.filter(function (task) {
@@ -23,7 +23,7 @@ export function Task(props) {
     }
   });
 
-  console.log("array filtrada", completedTasks.length);
+  console.log("Tarefas Concluídas", completedTasks.length);
 
   return (
     <div className={styles.container}>

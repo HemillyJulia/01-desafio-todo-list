@@ -1,7 +1,6 @@
 import { Trash } from "phosphor-react";
 import styles from "./TaskBox.module.css";
 
-
 export function TaskBox(props) {
 
 
@@ -19,26 +18,45 @@ export function TaskBox(props) {
     
   }
 
+  function tarefasConcluidas (id){
+
+    //Vou percorrer todo o meu array de tasks, pego cada task que foi mapeada e faço da seguinte forma:
+    //Se a task.id for igual a id me retorna um objeto. Esse objeto vai ser os valores antigos
+    //mais a negação de task.isComplete
+
+    const tarefasOk = props.tasks.map (task => task.id === id ? {
+      ...task,isComplete: !task.isComplete} : task)
+      props.setTarefas(tarefasOk)
+    console.log('Tarefa Concluída',tarefasOk)
+  }
+
   console.log(props);
   return (
     <div className={styles.paidastarefas}>
       {props.tasks.map((task) => {
         return (
           <div className={styles.cadatarefa} key={task.id}>
+            <div>
+              
+           
             
-            <p><input type="radio" />
+            <p><input type="radio" checked={task.isComplete} onClick={() => tarefasConcluidas(task.id)}/>
   
               {task.title} {""}
               {/* Na arroy function abaixo eu quero pegar o id que está mapeando e passar pra dentro da função  */}
               <button title="Deletar Comentário" onClick={ () => deletarComentario(task.id)}><Trash size={18}/></button>
               
             </p>
+            </div>
           </div>
         );
       })}
     </div>
   );
 }
+
+
+
 
 
 
