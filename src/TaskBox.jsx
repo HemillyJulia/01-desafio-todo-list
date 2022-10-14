@@ -38,9 +38,9 @@ export function TaskBox(props) {
           <div className={styles.cadatarefa} key={task.id}>
             <div>
               
-           
+           {/* se o task.iscomplete for true eu passo a className, se n uma string vazia */}
             
-            <p><input type="radio" checked={task.isComplete} onClick={() => tarefasConcluidas(task.id)}/>
+            <p className={task.isComplete=== true ? styles.textodatarefa : ""}><input  type="radio" checked={task.isComplete} onChange={() => tarefasConcluidas(task.id)}/>
   
               {task.title} {""}
               {/* Na arroy function abaixo eu quero pegar o id que está mapeando e passar pra dentro da função  */}

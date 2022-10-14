@@ -3,8 +3,6 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 64px;
-    height: 500px;
-   
 }
 
 .taskheader{
@@ -33,13 +31,14 @@
    
 }
  
-.task {
+.task{
     background:  #0D0D0D;;
     border-radius: 1px solid white;
-    height: 287px;
+    min-height:400px;
     border-radius: 8px;
+    margin-bottom: 20px;
     color: #808080;
-   
+    padding: 1rem;
 }
 
 .emptytask {

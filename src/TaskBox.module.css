@@ -22,8 +22,11 @@
     margin-top: 16px;
     background: #333333;
     cursor: pointer;
-    
   
+}
+
+.textodatarefa{
+    text-decoration: line-through;
 }
 
 .cadatarefa p button {
@@ -33,9 +36,10 @@ color: #808080;
 cursor: pointer;
 line-height: 0;
 border-radius: 2px;
-
  
 }
+
+
 
 .cadatarefa p button:hover {
 color:#E25858
