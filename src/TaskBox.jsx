@@ -35,16 +35,18 @@ export function TaskBox(props) {
     <div className={styles.paidastarefas}>
       {props.tasks.map((task) => {
         return (
-          <div className={styles.cadatarefa} key={task.id}>
-            <div>
+          <div className={styles.boxcomcadatarefa} key={task.id}>
+            <div className={styles.conteudoboxtarefas}>
               
            {/* se o task.iscomplete for true eu passo a className, se n uma string vazia */}
             
-            <p className={task.isComplete=== true ? styles.textodatarefa : ""}><input  type="radio" checked={task.isComplete} onChange={() => tarefasConcluidas(task.id)}/>
-  
+            <p className={task.isComplete=== true ? styles.textodatarefa : ""}>
+              <div className={styles.inputdatarefa}>
+              <input   type="radio" checked={task.isComplete} onChange={() => tarefasConcluidas(task.id)}/>
+              </div>
               {task.title} {""}
               {/* Na arroy function abaixo eu quero pegar o id que está mapeando e passar pra dentro da função  */}
-              <button title="Deletar Comentário" onClick={ () => deletarComentario(task.id)}><Trash size={18}/></button>
+              <button className={styles.botaodeletar} title="Deletar Comentário" onClick={ () => deletarComentario(task.id)}><Trash size={18}/></button>
               
             </p>
             </div>

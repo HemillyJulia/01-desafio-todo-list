@@ -5,43 +5,62 @@
 
 }
 
-.cadatarefa {
+.boxcomcadatarefa{
     display: flex;
     background: #333333;
     width: 100%;
     border-radius: 8px;
-    flex-wrap: wrap;
+    flex: 1;
+    border: 1px solid red;
 
 }
 
-.cadatarefa p input {
+.conteudoboxtarefas{
+    border: 1px solid green;
+    display: flex;
+    flex: 1;
+    
+}
+
+.inputdatarefa{
 
     height: 20px;
+    width: 20px;
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 16px;
     background: #333333;
     cursor: pointer;
+    border: 1px solid purple;
+   
+
   
 }
 
 .textodatarefa{
     text-decoration: line-through;
+    border: 1px solid yellow;
+   
+   
+  
 }
 
-.cadatarefa p button {
+.botaodeletar {
 background: transparent;
 border: 0;
 color: #808080;
 cursor: pointer;
 line-height: 0;
 border-radius: 2px;
+border: 1px solid blue;
+
  
 }
 
 
 
-.cadatarefa p button:hover {
+.botaodeletar:hover {
 color:#E25858
+
      
     }
