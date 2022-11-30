@@ -10,12 +10,12 @@ const tasks = [
   {
     id: uuidv4(),
     title: "Organizar as roupas de cama",
-    isComplete: true,
+    isComplete: false,
   },
   {
     id: uuidv4(),
     title: "Praticar alguma atividade física",
-    isComplete: true,
+    isComplete: false,
   },
 
   {
